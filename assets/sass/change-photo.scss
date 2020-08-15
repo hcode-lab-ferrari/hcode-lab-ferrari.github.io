@@ -5,6 +5,7 @@
         img {
             width: 256px;
             height: 256px;
+            border-radius: 50%;
         }
         #file {
             display: none;
@@ -12,6 +13,15 @@
         .choose-photo {
             margin-top: 20px;
             width: 256px;
+        }
+        button {
+            margin-bottom: 20px;
+        }
+        &.cropping {
+            img {
+                height: auto;
+                border-radius: 0;
+            }
         }
     }
 }

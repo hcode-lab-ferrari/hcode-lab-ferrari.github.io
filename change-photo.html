@@ -103,9 +103,14 @@
 
             <form>
 
-                <img src="assets/images/user@4x.png" alt="Foto Atual" />
+                <img src="assets/images/user@4x.png" alt="Foto Atual" id="photo-preview" />
 
                 <input type="file" name="photo" id="file" />
+
+                <input type="hidden" name="x" />
+                <input type="hidden" name="y" />
+                <input type="hidden" name="width" />
+                <input type="hidden" name="height" />
 
                 <button type="button" class="choose-photo">Escolher Foto</button>
 
