@@ -61,7 +61,6 @@
             border-radius: 50%;
             cursor: pointer;
             transition: all .1s ease-in-out;
-            height: 12vw;
             &:hover {
                 background-color: rgba(0, 0, 0, .1);
             }
@@ -81,6 +80,7 @@
         }
         .selected {
             background-color: var(--green)!important;
+            color: var(--white);
         }
     }
 }
@@ -106,6 +106,7 @@
         .days {
             grid-template-rows: 128px 128px 128px 128px 128px 128px;
             li {
+                height: 120px;
                 font-size: 38px;
             }
         }
