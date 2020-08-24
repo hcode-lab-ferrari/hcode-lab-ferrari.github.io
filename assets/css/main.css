@@ -318,6 +318,24 @@ header.page-title hr {
   }
 }
 
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.alert.danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
 @media (min-width: 992px) {
   .page form {
     max-width: 400px;
@@ -1233,9 +1251,6 @@ form button:active {
 #auth > section form .actions .link:active {
   color: var(--black);
 }
-#auth > section form.register .actions button {
-  width: 100%;
-}
 #auth > section form.forget .actions {
   justify-content: flex-end;
 }
@@ -1254,12 +1269,6 @@ form button:active {
     width: 100%;
     padding: 50px;
     padding-top: 100px;
-  }
-  #auth > section form.register .actions {
-    justify-content: flex-end;
-  }
-  #auth > section form.register .actions button {
-    width: initial;
   }
 }
 #error .desktop {
@@ -1331,10 +1340,18 @@ form button:active {
 #change-photo form img {
   width: 256px;
   height: 256px;
+  border-radius: 50%;
+}
+#change-photo form #file {
+  display: none;
 }
 #change-photo form .choose-photo {
-  margin-top: 20px;
+  margin: 20px 0;
   width: 256px;
+}
+#change-photo form.cropping img {
+  height: auto;
+  border-radius: 0;
 }
 
 #schedules {
@@ -1444,6 +1461,7 @@ form button:active {
 .calendar {
   flex-direction: column;
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 .calendar .month {
   color: var(--gray-2);
@@ -1545,6 +1563,10 @@ form button:active {
 .calendar .days .active:active {
   background-color: var(--blue-active);
 }
+.calendar .days .selected {
+  background-color: var(--green) !important;
+  color: var(--white);
+}
 
 @media (min-width: 992px) {
   .calendar {
@@ -1567,6 +1589,7 @@ form button:active {
     grid-template-rows: 128px 128px 128px 128px 128px 128px;
   }
   .calendar .days li {
+    height: 120px;
     font-size: 38px;
   }
 }
