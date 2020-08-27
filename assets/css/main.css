@@ -609,6 +609,9 @@ form button:active {
 #header .menu.logged .footer > a {
   display: none;
 }
+#header .menu.logged .footer > button {
+  cursor: pointer;
+}
 #header .menu .btn-register {
   min-width: 130px;
   border: none;
