@@ -594,7 +594,10 @@ form button:active {
   flex-direction: column;
   justify-content: space-between;
 }
-#header .menu.logged .menus .hide-guest {
+#header .menu.logged nav ul li.divider {
+  display: flex;
+}
+#header .menu.logged nav ul li.hide-guest {
   display: flex;
   width: 100%;
 }
@@ -690,32 +693,30 @@ form button:active {
   color: var(--gray-2);
   font-size: 12px;
 }
-#header .menu .menus {
-  margin-top: 170px;
+#header .menu nav {
   flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
-#header .menu .menus .hide-guest {
-  display: none;
-}
-#header .menu .menus hr {
-  margin: 15px 0;
-}
-#header .menu .menus ul {
+#header .menu nav ul {
   margin: 0;
+  margin-top: 200px;
   padding: 0;
   width: 100%;
   flex-direction: column;
 }
-#header .menu .menus ul li {
+#header .menu nav ul li {
   padding: 14px 0;
   list-style: none;
   justify-content: center;
 }
-#header .menu .menus ul li a {
+#header .menu nav ul li a {
   text-decoration: none;
   color: var(--dark-0);
+}
+#header .menu nav ul li.hide-guest, #header .menu nav ul li.divider {
+  display: none;
+}
+#header .menu nav ul hr {
+  margin: 15px 0;
 }
 #header button {
   background: none;
@@ -806,15 +807,15 @@ form button:active {
     margin-left: 200px;
     padding-bottom: 0;
   }
-  #header .menu > div {
-    width: 100%;
-  }
   #header .menu .btn-register {
     margin: 0;
     margin-right: 30px;
     width: 200px;
   }
-  #header .menu ul {
+  #header .menu nav {
+    width: 100%;
+  }
+  #header .menu nav ul {
     margin: 0;
     margin-top: 0;
     padding: 0;
@@ -822,24 +823,17 @@ form button:active {
     justify-content: flex-start;
     align-items: center;
   }
-  #header .menu ul li a {
+  #header .menu nav ul li.divider {
+    display: none;
+  }
+  #header .menu nav ul li a {
     font-size: 18px;
     min-width: 120px;
     padding: 10px 0;
     text-align: center;
   }
-  #header .menu ul li a:hover {
+  #header .menu nav ul li a:hover {
     color: var(--black);
-  }
-  #header .menu .menus {
-    margin-top: 0;
-    flex-direction: row;
-  }
-  #header .menu .menus hr {
-    display: none;
-  }
-  #header .menu .menus ul {
-    flex-direction: row;
   }
   #header .menu .footer {
     width: initial;
@@ -1813,7 +1807,8 @@ form button:active {
 }
 #schedules-services aside {
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   right: 0;
   bottom: 80px;
   height: 50px;
