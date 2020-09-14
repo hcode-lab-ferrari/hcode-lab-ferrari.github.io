@@ -76,7 +76,7 @@
   font-weight: 400;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
   display: flex;
 }
 
@@ -99,7 +99,6 @@ hr.divider {
   width: calc(100% - 2em);
   margin: 3em 0;
   border: none;
-  display: flex;
   align-self: center;
 }
 
@@ -574,12 +573,13 @@ form button:active {
   width: 100%;
   display: block;
   position: absolute;
-  top: 52px;
+  top: 60px;
   background-color: var(--white);
   height: 18px;
   border: none;
   border-top: var(--green) 6px solid;
   border-bottom: var(--red) 6px solid;
+  margin: 0;
 }
 #header .menu {
   transition: right 0.5s ease-in-out;
@@ -599,20 +599,9 @@ form button:active {
 }
 #header .menu.logged nav ul li.hide-guest {
   display: flex;
-  width: 100%;
 }
 #header .menu.logged .footer > div {
   display: flex;
-}
-#header .menu.logged .footer > div a {
-  flex-direction: column;
-  display: flex;
-}
-#header .menu.logged .footer > div > button {
-  cursor: pointer;
-}
-#header .menu.logged .footer > div > button:hover {
-  opacity: 0.8;
 }
 #header .menu.logged .footer > a {
   display: none;
@@ -736,10 +725,6 @@ form button:active {
   z-index: 5;
   width: 72px;
 }
-#header .overlay {
-  transition: all 0.5s ease-in-out;
-  display: none;
-}
 
 .open-menu {
   overflow: hidden;
@@ -752,7 +737,6 @@ form button:active {
   height: 100vh;
   background-color: var(--dark-1);
   z-index: 4;
-  display: flex;
 }
 .open-menu #header .menu {
   right: 0px;
@@ -781,13 +765,13 @@ form button:active {
     height: 100px;
   }
   #header .italy {
-    top: 92px;
+    top: 100px;
   }
   #header .logo {
-    right: calc(100vw - 200px);
+    right: calc(100vw - 250px);
     top: 17px;
     transition: none;
-    width: 120px;
+    width: 150px;
   }
   #header #btn-open, #header #btn-close {
     display: none;
@@ -816,9 +800,7 @@ form button:active {
     width: 100%;
   }
   #header .menu nav ul {
-    margin: 0;
     margin-top: 0;
-    padding: 0;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
