@@ -62,10 +62,20 @@
             }
             .actions {
                 justify-content: space-between;
+                > div {
+                    flex-direction: column;
+                    a {
+                        display: flex;
+                    }
+                }
                 .link {
                     font-size: 14px;
+                    font-weight: 600;
                     color: var(--dark-0);
                     text-decoration: none;
+                    & + .link {
+                        margin-top: 10px;
+                    }
                     &:hover {
                         color: var(--gray-11);
                     }

@@ -1311,10 +1311,20 @@ form button:active {
 #auth > section form .actions {
   justify-content: space-between;
 }
+#auth > section form .actions > div {
+  flex-direction: column;
+}
+#auth > section form .actions > div a {
+  display: flex;
+}
 #auth > section form .actions .link {
   font-size: 14px;
+  font-weight: 600;
   color: var(--dark-0);
   text-decoration: none;
+}
+#auth > section form .actions .link + .link {
+  margin-top: 10px;
 }
 #auth > section form .actions .link:hover {
   color: var(--gray-11);
