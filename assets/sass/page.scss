@@ -43,12 +43,12 @@ header {
         min-height: 130px;
         background-color: var(--black);
         color: var(--white);
-        font-weight: bold;
         justify-content: center;
         align-items: center;
         margin-top: 18px;
         h1 {
             font-size: 23px;
+            font-weight: bold;
             text-transform: uppercase;
             small {
                 display: block;
