@@ -175,7 +175,12 @@ header.page-title {
   align-items: flex-start;
   width: 100%;
 }
-header.page-title h1, header.page-title h2, header.page-title h3, header.page-title h4, header.page-title h5, header.page-title h6 {
+header.page-title h1,
+header.page-title h2,
+header.page-title h3,
+header.page-title h4,
+header.page-title h5,
+header.page-title h6 {
   color: var(--green);
   margin: 0;
   font-size: 32px;
@@ -191,7 +196,7 @@ header.page-title hr {
 .page {
   flex-direction: column;
   margin-bottom: 80px;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 158px);
   overflow: auto;
 }
 .page.page-summary {
@@ -211,13 +216,12 @@ header.page-title hr {
   min-height: 130px;
   background-color: var(--black);
   color: var(--white);
-  font-weight: bold;
   justify-content: center;
   align-items: center;
-  margin-top: 18px;
 }
 .page > header h1 {
   font-size: 23px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .page > header h1 small {
@@ -241,7 +245,8 @@ header.page-title hr {
   padding: 20px;
   z-index: 1;
 }
-.page footer.fixed button, .page footer.fixed a {
+.page footer.fixed button,
+.page footer.fixed a {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -260,24 +265,30 @@ header.page-title hr {
   background-color: var(--gray-3);
   color: var(--gray-0);
 }
-.page footer.fixed button:hover, .page footer.fixed a:hover {
+.page footer.fixed button:hover,
+.page footer.fixed a:hover {
   background-color: var(--black-10);
 }
-.page footer.fixed button:active, .page footer.fixed a:active {
+.page footer.fixed button:active,
+.page footer.fixed a:active {
   background-color: var(--black-75);
 }
 @media (min-width: 768px) {
-  .page footer.fixed button, .page footer.fixed a {
+  .page footer.fixed button,
+.page footer.fixed a {
     min-width: 150px;
   }
 }
-.page footer.fixed button:hover, .page footer.fixed a:hover {
+.page footer.fixed button:hover,
+.page footer.fixed a:hover {
   background-color: var(--gray-8);
 }
-.page footer.fixed button:active, .page footer.fixed a:active {
+.page footer.fixed button:active,
+.page footer.fixed a:active {
   background-color: var(--gray-9);
 }
-.page footer.fixed button[type=submit], .page footer.fixed a.black {
+.page footer.fixed button[type=submit],
+.page footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -296,21 +307,26 @@ header.page-title hr {
   background-color: var(--black);
   color: var(--white);
 }
-.page footer.fixed button[type=submit]:hover, .page footer.fixed a.black:hover {
+.page footer.fixed button[type=submit]:hover,
+.page footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page footer.fixed button[type=submit]:active, .page footer.fixed a.black:active {
+.page footer.fixed button[type=submit]:active,
+.page footer.fixed a.black:active {
   background-color: var(--black-75);
 }
 @media (min-width: 768px) {
-  .page footer.fixed button[type=submit], .page footer.fixed a.black {
+  .page footer.fixed button[type=submit],
+.page footer.fixed a.black {
     min-width: 150px;
   }
 }
-.page footer.fixed button[type=submit]:hover, .page footer.fixed a.black:hover {
+.page footer.fixed button[type=submit]:hover,
+.page footer.fixed a.black:hover {
   background-color: var(--black-hover);
 }
-.page footer.fixed button[type=submit]:active, .page footer.fixed a.black:active {
+.page footer.fixed button[type=submit]:active,
+.page footer.fixed a.black:active {
   background-color: var(--black-active);
 }
 .page .toast {
@@ -351,7 +367,8 @@ header.page-title hr {
 .page.blue > header {
   background-color: var(--blue);
 }
-.page.blue footer.fixed button[type=submit], .page.blue footer.fixed a.black {
+.page.blue footer.fixed button[type=submit],
+.page.blue footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -370,27 +387,33 @@ header.page-title hr {
   background-color: var(--blue);
   color: var(--white);
 }
-.page.blue footer.fixed button[type=submit]:hover, .page.blue footer.fixed a.black:hover {
+.page.blue footer.fixed button[type=submit]:hover,
+.page.blue footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page.blue footer.fixed button[type=submit]:active, .page.blue footer.fixed a.black:active {
+.page.blue footer.fixed button[type=submit]:active,
+.page.blue footer.fixed a.black:active {
   background-color: var(--black-75);
 }
 @media (min-width: 768px) {
-  .page.blue footer.fixed button[type=submit], .page.blue footer.fixed a.black {
+  .page.blue footer.fixed button[type=submit],
+.page.blue footer.fixed a.black {
     min-width: 150px;
   }
 }
-.page.blue footer.fixed button[type=submit]:hover, .page.blue footer.fixed a.black:hover {
+.page.blue footer.fixed button[type=submit]:hover,
+.page.blue footer.fixed a.black:hover {
   background-color: var(--blue-hover);
 }
-.page.blue footer.fixed button[type=submit]:active, .page.blue footer.fixed a.black:active {
+.page.blue footer.fixed button[type=submit]:active,
+.page.blue footer.fixed a.black:active {
   background-color: var(--blue-active);
 }
 .page.green > header {
   background-color: var(--green);
 }
-.page.green footer.fixed button[type=submit], .page.green footer.fixed a.black {
+.page.green footer.fixed button[type=submit],
+.page.green footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -407,14 +430,17 @@ header.page-title hr {
   cursor: pointer;
   background: transparent;
 }
-.page.green footer.fixed button[type=submit]:hover, .page.green footer.fixed a.black:hover {
+.page.green footer.fixed button[type=submit]:hover,
+.page.green footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page.green footer.fixed button[type=submit]:active, .page.green footer.fixed a.black:active {
+.page.green footer.fixed button[type=submit]:active,
+.page.green footer.fixed a.black:active {
   background-color: var(--black-75);
 }
 @media (min-width: 768px) {
-  .page.green footer.fixed button[type=submit], .page.green footer.fixed a.black {
+  .page.green footer.fixed button[type=submit],
+.page.green footer.fixed a.black {
     min-width: 150px;
   }
 }
@@ -427,19 +453,24 @@ header.page-title hr {
     justify-content: flex-start;
     flex-direction: row;
   }
-  .page footer.fixed button + button, .page footer.fixed a + a, .page footer.fixed a + button, .page footer.fixed button + a {
+  .page footer.fixed button + button,
+.page footer.fixed a + a,
+.page footer.fixed a + button,
+.page footer.fixed button + a {
     margin-right: 20px;
   }
-  .page footer.fixed button, .page footer.fixed a {
+  .page footer.fixed button,
+.page footer.fixed a {
     order: 1;
   }
-  .page footer.fixed button:first-child, .page footer.fixed a:first-child {
+  .page footer.fixed button:first-child,
+.page footer.fixed a:first-child {
     order: 2;
   }
 }
 @media (min-width: 1200px) {
   .page {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 198px);
   }
   .page > header {
     justify-content: flex-start;
@@ -577,6 +608,7 @@ form button:active {
   background-color: var(--gray-5);
   position: relative;
   z-index: 3;
+  margin-bottom: 18px;
 }
 #header .italy {
   width: 100%;
@@ -722,7 +754,8 @@ form button:active {
   padding: 13px;
   outline: none;
 }
-#header #btn-open, #header #btn-close {
+#header #btn-open,
+#header #btn-close {
   position: absolute;
   right: 0;
 }
@@ -782,7 +815,8 @@ form button:active {
     transition: none;
     width: 150px;
   }
-  #header #btn-open, #header #btn-close {
+  #header #btn-open,
+#header #btn-close {
     display: none;
   }
   #header ul {
@@ -797,8 +831,25 @@ form button:active {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 250px;
     padding-bottom: 0;
+  }
+  #header .menu > div {
+    width: 100%;
+  }
+  #header .menu .menus {
+    width: 100%;
+  }
+  #header .menu .menus > ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  #header .menu .menus > ul a {
+    text-decoration: none;
+    color: var(--dark-0);
+  }
+  #header .menu .menus > ul a:hover {
+    color: var(--black);
   }
   #header .menu .btn-register {
     margin: 0;
@@ -1232,12 +1283,8 @@ form button:active {
   #contact .contacts {
     flex-direction: row;
   }
-  #contact .contacts li {
-    margin-right: 1em;
-    margin-bottom: 2em;
-  }
-  #contact .contacts li:last-child {
-    margin-right: 0;
+  #contact .contacts li + li {
+    margin-left: var(--space);
   }
   #contact textarea {
     height: 245px;
@@ -1905,7 +1952,7 @@ form button:active {
     width: 375px;
     height: calc(100vh - 118px);
     bottom: 0;
-    z-index: 1;
+    z-index: 4;
   }
   #schedules-services aside header, #schedules-services aside section, #schedules-services aside.open header, #schedules-services aside.open section {
     display: flex;
